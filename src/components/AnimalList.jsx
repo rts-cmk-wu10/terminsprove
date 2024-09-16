@@ -20,7 +20,7 @@ export default function AnimalList() {
 			<h2>Dyr hos os</h2>
 			<p>{data && data.length} dyr</p>
 			<div>
-				{data?.slice(start, end).map(item => <AnimalCard animal={item} />)}
+				{data?.slice(start, end).map(item => <AnimalCard key={item.id} animal={item} />)}
 			</div>
 			<button onClick={() => setStart(start - display)}>Forrige</button>
 			<button onClick={() => setStart(start + display)}>Næste</button>
