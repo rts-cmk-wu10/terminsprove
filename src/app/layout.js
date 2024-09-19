@@ -1,4 +1,6 @@
+import { ToastContainer } from "react-toastify"
 import "./globals.css"
+import 'react-toastify/dist/ReactToastify.css'
 
 export const metadata = {
   title: "Foreningen for dyrevelfærd",
@@ -10,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
+        <ToastContainer />
       </body>
     </html>
   )
